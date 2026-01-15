@@ -5,82 +5,88 @@
     <title>Mad Business Plans</title>
 
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
     <style>
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            color: #212529;
+            color: #111111;
             background: #ffffff;
         }
 
-        /* TRANSPARENT NAV */
+        /* MINIMAL NAV */
         nav {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            padding: 20px 40px;
-            display: flex;
-            gap: 25px;
-            z-index: 10;
+            background: white;
+            padding: 22px 40px;
+            border-bottom: 1px solid #E5E5E5;
         }
 
         nav a {
-            color: white;
+            color: #000000;
+            margin-right: 28px;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 400;
             font-size: 17px;
         }
 
         /* HERO */
         .hero {
-            padding: 120px 20px 100px;
+            padding: 140px 20px 120px;
             text-align: center;
-            background: linear-gradient(135deg, #0D6EFD, #74C0FC);
-            color: white;
+            background: white;
         }
 
         .hero h1 {
-            font-size: 42px;
-            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+            font-size: 54px;
+            margin-bottom: 22px;
             font-weight: 600;
+            letter-spacing: -0.6px;
         }
 
         .hero p {
-            font-size: 20px;
-            max-width: 700px;
-            margin: 0 auto 30px;
+            font-size: 21px;
+            max-width: 720px;
+            margin: 0 auto 38px;
             font-weight: 300;
+            color: #333333;
+            line-height: 1.6;
         }
 
         .btn {
-            background: white;
-            color: #0D6EFD;
-            padding: 12px 28px;
+            background: #000000;
+            color: white;
+            padding: 14px 34px;
             border-radius: 6px;
             text-decoration: none;
             font-size: 18px;
-            font-weight: 600;
+            font-weight: 500;
+            transition: 0.25s ease;
+        }
+
+        .btn:hover {
+            background: #333333;
         }
 
         /* SECTIONS */
         section {
-            padding: 70px 20px;
+            padding: 90px 20px;
             text-align: center;
         }
 
         h2 {
-            font-size: 32px;
-            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+            font-size: 38px;
+            margin-bottom: 35px;
             font-weight: 600;
-            color: #0D6EFD;
         }
 
         h3 {
             font-size: 22px;
-            margin-top: 25px;
-            color: #212529;
+            margin-top: 28px;
+            color: #111111;
+            font-family: 'Inter', sans-serif;
         }
 
         .section-content {
@@ -88,21 +94,21 @@
             margin: 0 auto;
             text-align: left;
             font-size: 18px;
-            line-height: 1.7;
+            line-height: 1.75;
         }
 
         /* ALT BACKGROUND */
         .alt {
-            background: #F8F9FA;
+            background: #F7F7F7;
         }
 
         /* FOOTER */
         footer {
-            background: #0D6EFD;
+            background: #000000;
             color: white;
-            padding: 20px;
+            padding: 22px;
             text-align: center;
-            margin-top: 40px;
+            margin-top: 50px;
             font-size: 14px;
         }
     </style>
@@ -120,8 +126,8 @@
 
     <!-- HERO -->
     <section class="hero">
-        <h1>Business Plans Built for Modern Entrepreneurs</h1>
-        <p>I help new business owners turn ideas into lender-ready, investor-ready, and grant-ready business plans with clarity, structure, and confidence.</p>
+        <h1>Business Plans With Clarity & Confidence</h1>
+        <p>I help new entrepreneurs turn ideas into structured, lender-ready business plans with a calm, premium, minimalist approach.</p>
         <a class="btn" href="contact.html">Get Started</a>
     </section>
 
@@ -160,10 +166,10 @@
     <section>
         <h2>Why Choose Me</h2>
         <div class="section-content">
-            <p>I bring a modern, structured, and practical approach to every business plan I create.</p>
+            <p>I bring a calm, structured, and premium approach to every business plan I create.</p>
 
             <ul>
-                <li><strong>Clear, modern writing style</strong></li>
+                <li><strong>Clear, elegant writing style</strong></li>
                 <li><strong>Realistic financial projections</strong></li>
                 <li><strong>Step-by-step structure</strong></li>
                 <li><strong>Tailored guidance</strong></li>
