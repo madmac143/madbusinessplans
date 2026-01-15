@@ -5,54 +5,58 @@
     <title>Mad Business Plans</title>
 
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
     <style>
         body {
             margin: 0;
             font-family: 'Inter', sans-serif;
-            color: #222222;
+            color: #212529;
             background: #ffffff;
         }
 
+        /* TRANSPARENT NAV */
         nav {
-            background: #1A2A4F;
-            padding: 15px 30px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            gap: 25px;
+            z-index: 10;
         }
 
         nav a {
             color: white;
-            margin-right: 25px;
             text-decoration: none;
             font-weight: 500;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Poppins', sans-serif;
-            color: #1A2A4F;
+            font-size: 17px;
         }
 
         /* HERO */
         .hero {
-            padding: 80px 20px;
-            background: #F5F5F5;
+            padding: 120px 20px 100px;
             text-align: center;
+            background: linear-gradient(135deg, #0D6EFD, #74C0FC);
+            color: white;
         }
 
         .hero h1 {
-            font-size: 40px;
+            font-size: 42px;
             margin-bottom: 20px;
+            font-weight: 600;
         }
 
         .hero p {
             font-size: 20px;
             max-width: 700px;
             margin: 0 auto 30px;
+            font-weight: 300;
         }
 
         .btn {
-            background: #D4A017;
-            color: white;
+            background: white;
+            color: #0D6EFD;
             padding: 12px 28px;
             border-radius: 6px;
             text-decoration: none;
@@ -62,8 +66,21 @@
 
         /* SECTIONS */
         section {
-            padding: 60px 20px;
+            padding: 70px 20px;
             text-align: center;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: #0D6EFD;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-top: 25px;
+            color: #212529;
         }
 
         .section-content {
@@ -71,11 +88,17 @@
             margin: 0 auto;
             text-align: left;
             font-size: 18px;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
+        /* ALT BACKGROUND */
+        .alt {
+            background: #F8F9FA;
+        }
+
+        /* FOOTER */
         footer {
-            background: #1A2A4F;
+            background: #0D6EFD;
             color: white;
             padding: 20px;
             text-align: center;
@@ -97,7 +120,7 @@
 
     <!-- HERO -->
     <section class="hero">
-        <h1>Business Plan Consulting for New Entrepreneurs</h1>
+        <h1>Business Plans Built for Modern Entrepreneurs</h1>
         <p>I help new business owners turn ideas into lender-ready, investor-ready, and grant-ready business plans with clarity, structure, and confidence.</p>
         <a class="btn" href="contact.html">Get Started</a>
     </section>
@@ -118,7 +141,7 @@
     </section>
 
     <!-- WHO I HELP -->
-    <section style="background:#F5F5F5;">
+    <section class="alt">
         <h2>Who I Help</h2>
         <div class="section-content">
             <p>I work with new and early-stage entrepreneurs who need clarity, structure, and confidence in their business plans.</p>
@@ -137,14 +160,14 @@
     <section>
         <h2>Why Choose Me</h2>
         <div class="section-content">
-            <p>I bring a unique blend of clarity, structure, and operational logic to every business plan I create.</p>
+            <p>I bring a modern, structured, and practical approach to every business plan I create.</p>
 
             <ul>
-                <li><strong>Deep understanding of new entrepreneurs</strong></li>
+                <li><strong>Clear, modern writing style</strong></li>
+                <li><strong>Realistic financial projections</strong></li>
                 <li><strong>Step-by-step structure</strong></li>
-                <li><strong>Realistic financials</strong></li>
-                <li><strong>Clear communication</strong></li>
                 <li><strong>Tailored guidance</strong></li>
+                <li><strong>Designed for lenders and investors</strong></li>
             </ul>
         </div>
     </section>
