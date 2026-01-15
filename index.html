@@ -33,10 +33,10 @@
         /* TOP BRAND NAME — Bigger but not huge */
         .brand-title-main {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 72px;        /* Adjusted size */
+            font-size: 72px;
             font-weight: 700;
             letter-spacing: -0.8px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             margin-top: 0;
             color: #000000;
         }
@@ -44,23 +44,24 @@
         /* TAGLINE UNDER BRAND NAME */
         .brand-subtitle {
             font-family: 'Inter', sans-serif;
-            font-size: 30px;        /* Smaller than brand title */
+            font-size: 30px;
             font-weight: 400;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             color: #111111;
         }
 
-        /* HERO */
+        /* HERO — SHORTER HEIGHT */
         .hero {
-            padding: 150px 20px 130px;
+            padding: 100px 20px 60px; /* reduced height */
             text-align: center;
             background: white;
+            position: relative;
         }
 
         .hero p {
             font-size: 20px;
             max-width: 720px;
-            margin: 0 auto 38px;
+            margin: 0 auto 30px;
             font-weight: 300;
             color: #333333;
             line-height: 1.6;
@@ -79,6 +80,20 @@
 
         .btn:hover {
             background: #333333;
+        }
+
+        /* SCROLL INDICATOR ARROW */
+        .scroll-indicator {
+            font-size: 28px;
+            color: #000000;
+            margin-top: 20px;
+            opacity: 0.6;
+            animation: bounce 1.8s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(6px); }
         }
 
         /* SECTIONS */
@@ -139,7 +154,7 @@
     <!-- HERO -->
     <section class="hero">
 
-        <!-- BIG BRAND NAME (bigger but not huge) -->
+        <!-- BIG BRAND NAME -->
         <h1 class="brand-title-main">Mad Business Plans</h1>
 
         <!-- TAGLINE UNDER BRAND NAME -->
@@ -148,6 +163,9 @@
         <p>I help new entrepreneurs turn ideas into structured, lender-ready business plans with a calm, premium, minimalist approach.</p>
 
         <a class="btn" href="contact.html">Get Started</a>
+
+        <!-- SCROLL INDICATOR -->
+        <div class="scroll-indicator">⌄</div>
     </section>
 
     <!-- WHAT I DO -->
