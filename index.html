@@ -52,6 +52,231 @@
 
         /* HERO — SHORTER HEIGHT */
         .hero {
+            padding: 100px 20px 60px;
+            text-align: center;
+            background: white;
+            position: relative;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 720px;
+            margin: 0 auto 30px;
+            font-weight: 300;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        .btn {
+            background: #000000;
+            color: white;
+            padding: 14px 34px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            transition: 0.25s ease;
+        }
+
+        .btn:hover {
+            background: #333333;
+        }
+
+        /* SCROLL INDICATOR ARROW */
+        .scroll-indicator {
+            font-size: 28px;
+            color: #000000;
+            margin-top: 20px;
+            opacity: 0.6;
+            animation: bounce 1.8s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(6px); }
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 38px;
+            margin-bottom: 35px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-top: 28px;
+            color: #111111;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .section-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.75;
+        }
+
+        /* ALT BACKGROUND */
+        .alt {
+            background: #F7F7F7;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #000000;
+            color: white;
+            padding: 22px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <!-- BIG BRAND NAME -->
+        <h1 class="brand-title-main">Mad Business Plans</h1>
+
+        <!-- TAGLINE UNDER BRAND NAME -->
+        <h1 class="brand-subtitle">Business Plans With Clarity & Confidence</h1>
+
+        <p>I help new entrepreneurs turn ideas into structured, lender-ready business plans with a calm, premium, minimalist approach.</p>
+
+        <a class="btn" href="contact.html">Get Started</a>
+
+        <!-- SCROLL INDICATOR -->
+        <div class="scroll-indicator">⌄</div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section>
+        <h2>What I Do</h2>
+        <div class="section-content">
+            <h3>Clarity & Structure</h3>
+            <p>I turn messy ideas into clear, lender-ready business plans with logical flow and strong positioning.</p>
+
+            <h3>Financial Modeling</h3>
+            <p>I build realistic startup costs, revenue projections, and break-even analysis using clean, simple models.</p>
+
+            <h3>Funding Preparation</h3>
+            <p>I help entrepreneurs prepare plans that banks, investors, and grant reviewers actually trust.</p>
+        </div>
+    </section>
+
+    <!-- WHO I HELP -->
+    <section class="alt">
+        <h2>Who I Help</h2>
+        <div class="section-content">
+            <p>I work with new and early-stage entrepreneurs who need clarity, structure, and confidence in their business plans.</p>
+
+            <ul>
+                <li>First-time business owners</li>
+                <li>Entrepreneurs applying for loans, grants, or investor funding</li>
+                <li>People with strong ideas but difficulty organizing them</li>
+                <li>Founders who need a professional plan to move forward</li>
+                <li>Small business owners updating an existing plan</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE ME -->
+    <section>
+        <h2>Why Choose Me</h2>
+        <div class="section-content">
+            <p>I bring a calm, structured, and premium approach to every business plan I create.</p>
+
+            <ul>
+                <li><strong>Clear, elegant writing style</strong></li>
+                <li><strong>Realistic financial projections</strong></li>
+                <li><strong>Step-by-step structure</strong></li>
+                <li><strong>Tailored guidance</strong></li>
+                <li><strong>Designed for lenders and investors</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Mad Business Plans. All rights reserved.
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mad Business Plans</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            color: #111111;
+            background: #ffffff;
+        }
+
+        /* MINIMAL NAV */
+        nav {
+            background: white;
+            padding: 22px 40px;
+            border-bottom: 1px solid #E5E5E5;
+        }
+
+        nav a {
+            color: #000000;
+            margin-right: 28px;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 17px;
+        }
+
+        /* TOP BRAND NAME — Bigger but not huge */
+        .brand-title-main {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 72px;
+            font-weight: 700;
+            letter-spacing: -0.8px;
+            margin-bottom: 20px;
+            margin-top: 0;
+            color: #000000;
+        }
+
+        /* TAGLINE UNDER BRAND NAME */
+        .brand-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 25px;
+            color: #111111;
+        }
+
+        /* HERO — SHORTER HEIGHT */
+        .hero {
             padding: 100px 20px 60px; /* reduced height */
             text-align: center;
             background: white;
@@ -199,6 +424,29 @@
         </div>
     </section>
 
+    <!-- WHY CHOOSE ME -->
+    <section>
+        <h2>Why Choose Me</h2>
+        <div class="section-content">
+            <p>I bring a calm, structured, and premium approach to every business plan I create.</p>
+
+            <ul>
+                <li><strong>Clear, elegant writing style</strong></li>
+                <li><strong>Realistic financial projections</strong></li>
+                <li><strong>Step-by-step structure</strong></li>
+                <li><strong>Tailored guidance</strong></li>
+                <li><strong>Designed for lenders and investors</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Mad Business Plans. All rights reserved.
+    </footer>
+
+</body>
+</html>
     <!-- WHY CHOOSE ME -->
     <section>
         <h2>Why Choose Me</h2>
